@@ -1,0 +1,72 @@
+
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+ul
+{
+overflow:hidden;
+margin:0 0;
+
+
+}
+li
+{
+  display:inline;
+}
+a
+{
+  float:left;
+  padding:2.5vh 2.5vw;
+  text-decoration:none;
+  text-align:center;
+  display:block;
+}
+
+
+
+.main::after{
+content:"";
+display:table;
+clear:both;
+}
+.main-wrapper{
+
+}
+.main-wrapper a{
+  display:inline-block;
+
+}
+
+
+/*
+3 column layout
+*/
+
+.column
+{
+  float: left;
+   width: 33%;
+   padding:1em;
+   box-sizing:border-box;
+}
+.column p
+{
+  text-align:justify;
+}
+.row:after{
+  content: "";
+display: table;
+clear: both;
+}
+#dog-pic{
+  max-width:100%;
+  display:inline-block;
+  height:auto;
+margin:0 auto;
+
+
+
+}
