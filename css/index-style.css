@@ -3,8 +3,11 @@ body{
   margin:0;
   padding:0;
   box-sizing:border-box;
+  position:relative;
 }
-
+/*
+Menu
+*/
 ul
 {
 overflow:hidden;
@@ -25,7 +28,9 @@ a
   display:block;
 }
 
-
+/*
+main - the dog picture and the text   near it
+*/
 
 .main::after{
 content:"";
@@ -33,12 +38,39 @@ display:table;
 clear:both;
 }
 .main-wrapper{
-
+ position:relative;
 }
 .main-wrapper a{
   display:inline-block;
+  padding:0;
 
 }
+.main-wrapper{
+  margin-top:0;
+  text-align:center;
+  position:relative;
+
+}
+
+.main-wrapper h1{
+  font-size:4.5vw;
+  margin-top:0;
+  padding-top:3.5vw;
+  text-align:justify;
+    text-align:center;
+}
+.main-wrapper h3{
+  font-size:2.5vw;
+  text-align:center;
+}
+.text-wrapper{
+
+ text-align:center;
+
+
+
+}
+
 
 
 /*
@@ -55,6 +87,7 @@ clear:both;
 .column p
 {
   text-align:justify;
+  word-wrap: break-word;
 }
 .row:after{
   content: "";
@@ -65,8 +98,18 @@ clear: both;
   max-width:100%;
   display:inline-block;
   height:auto;
-margin:0 auto;
 
 
 
+}
+.row hr{
+  display:none;
+}
+/*
+footer
+*/
+footer
+{
+  text-align:center;
+  padding:1.5vmax 1.5vmin;
 }
