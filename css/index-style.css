@@ -3,7 +3,6 @@ body{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  position:relative;
 }
 /*
 Menu
@@ -22,6 +21,7 @@ li
 a
 {
   float:left;
+  font-size:2.25em;
   padding:2.5vh 2.5vw;
   text-decoration:none;
   text-align:center;
@@ -37,39 +37,31 @@ content:"";
 display:table;
 clear:both;
 }
-.main-wrapper{
- position:relative;
-}
+
 .main-wrapper a{
-  display:inline-block;
+  display:block;
   padding:0;
 
 }
 .main-wrapper{
   margin-top:0;
-  text-align:center;
+  /*text-align:center;*/
   position:relative;
 
 }
 
 .main-wrapper h1{
-  font-size:4.5vw;
+  font-size:4em;
   margin-top:0;
   padding-top:3.5vw;
-  text-align:justify;
-    text-align:center;
+  text-align:center;
+
 }
 .main-wrapper h3{
-  font-size:2.5vw;
+  font-size:3em;
   text-align:center;
 }
-.text-wrapper{
 
- text-align:center;
-
-
-
-}
 
 
 
@@ -88,6 +80,7 @@ clear:both;
 {
   text-align:justify;
   word-wrap: break-word;
+  font-size:2vmax;
 }
 .row:after{
   content: "";
@@ -95,15 +88,56 @@ display: table;
 clear: both;
 }
 #dog-pic{
+    display:inline-block;
+      height:auto;
   max-width:100%;
-  display:inline-block;
-  height:auto;
+
+
 
 
 
 }
-.row hr{
+ hr{
   display:none;
+}
+
+
+
+/*
+main responsive
+
+*/
+@media only screen and (max-width: 1024px) {
+     #dog-pic,.main-wrapper a{
+       width:100%;
+     }
+     .main-wrapper h1{
+       font-size:4vmax;
+
+     }
+     .main-wrapper h3{
+       font-size:3.5vmax;
+       text-align:justify;
+     }
+
+}
+/* 3 column layout responsive */
+@media only screen and (max-width: 600px) {
+   .column{
+     width:100%;
+   }
+   hr{
+     display:block;
+
+   }
+   a{
+     width:100%;
+     font-size:5vmax;
+   }
+   .main-wrapper h3{
+     text-align:center;
+   }
+
 }
 /*
 footer
